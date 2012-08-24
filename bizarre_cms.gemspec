@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "jquery-rails"
   s.add_dependency "haml-rails", ">= 0.3.4"
   s.add_dependency 'activeadmin', git: 'git://github.com/gregbell/active_admin.git'
+  s.add_dependency 'rich', :git => 'https://github.com/bastiaanterhorst/rich.git'
 
   s.add_development_dependency "rspec-rails", ">= 2.11.0", :group => [:development, :test]
   s.add_development_dependency "pg"

@@ -6,4 +6,5 @@
 //= require ckeditor/ckeditor
 //= require ckeditor/adapters/jquery
 //= require rich/editor/rich_editor
-//= require bizarre_cms/rich/rich_picker
+//= require bizarre_cms/rich_picker
+//= require bizarre_cms/jqtree

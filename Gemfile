@@ -10,6 +10,8 @@ gem "jquery-rails"
 
 gem 'activeadmin', git: 'git://github.com/gregbell/active_admin.git'
 gem 'rich', git: 'https://github.com/bastiaanterhorst/rich.git'
+gem 'sqlite3'
+gem 'therubyracer'
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing

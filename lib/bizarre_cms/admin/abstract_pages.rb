@@ -24,7 +24,7 @@ if defined?(ActiveAdmin)
       end
       #
       #TODO add :except method
-      #Contentable.content_fields(f, hide_summary: true)
+      BizarreCms::Contentable.content_fields(f, hide_summary: true)
       f.buttons
     end
 

@@ -1,4 +1,5 @@
 require "bizarre_cms/engine"
+require "bizarre_cms/contentable"
 
 module BizarreCms
   class Engine < ::Rails::Engine

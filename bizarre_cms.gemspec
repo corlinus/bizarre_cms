@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'rich'
   s.add_dependency 'awesome_nested_set'
   s.add_dependency "coffee-filter"
+  s.add_dependency "paperclip", "~> 3.0"
+  s.add_dependency "redcarpet"
 
   s.add_development_dependency "rspec-rails", ">= 2.11.0"
 end

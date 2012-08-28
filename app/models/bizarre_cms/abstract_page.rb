@@ -1,6 +1,6 @@
 class BizarreCms::AbstractPage < ActiveRecord::Base
   attr_accessible :page_type, :parent_id, :published, :slug, :title, :linked_abstract_page_ids
-  #include Contentable
+  include BizarreCms::Contentable
 
   acts_as_nested_set
 

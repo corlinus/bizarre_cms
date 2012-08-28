@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120824121835) do
+ActiveRecord::Schema.define(:version => 20120828131611) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -56,6 +56,22 @@ ActiveRecord::Schema.define(:version => 20120824121835) do
     t.boolean  "published"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "bizarre_cms_contents", :force => true do |t|
+    t.text     "summary"
+    t.text     "body"
+    t.string   "meta_title"
+    t.text     "meta_desc"
+    t.text     "meta_keywords"
+    t.integer  "contentable_id"
+    t.string   "contentable_type"
+    t.string   "top_image_file_name"
+    t.string   "top_image_content_type"
+    t.integer  "top_image_file_size"
+    t.datetime "top_image_updated_at"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
   end
 
 end

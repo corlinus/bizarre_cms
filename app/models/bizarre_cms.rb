@@ -1,0 +1,2 @@
+module BizarreCms
+end

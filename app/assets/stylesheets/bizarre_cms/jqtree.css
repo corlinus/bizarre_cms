@@ -29,7 +29,7 @@ ul.jqtree-tree li {
 }
 
 ul.jqtree-tree .jqtree-toggler {
-    background-image: url(jqtree-icons.png);
+    background-image: url(/assets/bizarre_cms/jqtree-icons.png);
     background-repeat: no-repeat;
     background-position: -8px 0;
     width: 8px;
@@ -86,7 +86,7 @@ ul.jqtree-tree li.jqtree-ghost span {
 }
 
 ul.jqtree-tree li.jqtree-ghost span.jqtree-circle {
-    background-image: url(jqtree-icons.png);
+    background-image: url(/assets/bizarre_cms/jqtree-icons.png);
     background-repeat: no-repeat;
     background-position: 0 -8px;
     height: 8px;

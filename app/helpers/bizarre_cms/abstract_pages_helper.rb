@@ -1,0 +1,2 @@
+module BizarreCms::AbstractPagesHelper
+end

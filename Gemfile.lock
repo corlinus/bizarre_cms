@@ -33,6 +33,8 @@ PATH
   specs:
     bizarre_cms (0.0.1)
       activeadmin
+      awesome_nested_set
+      coffee-filter
       coffee-rails
       haml-rails (>= 0.3.4)
       jquery-rails
@@ -73,11 +75,16 @@ GEM
     arbre (1.0.0)
       activesupport (>= 3.0.0)
     arel (3.0.2)
+    awesome_nested_set (2.1.4)
+      activerecord (>= 3.0.0)
     bcrypt-ruby (3.0.1)
     bourbon (2.1.1)
       sass (>= 3.1)
     builder (3.0.0)
     cocaine (0.2.1)
+    coffee-filter (0.1.1)
+      coffee-script (>= 2.2.0)
+      haml (>= 3.0.18)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -208,7 +215,9 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  awesome_nested_set
   bizarre_cms!
+  coffee-filter
   jquery-rails
   rich!
   rspec-rails (>= 2.11.0)

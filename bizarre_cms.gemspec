@@ -23,6 +23,8 @@ Gem::Specification.new do |s|
   s.add_dependency "haml-rails", ">= 0.3.4"
   s.add_dependency 'activeadmin'
   s.add_dependency 'rich'
+  s.add_dependency 'awesome_nested_set'
+  s.add_dependency "coffee-filter"
 
   s.add_development_dependency "rspec-rails", ">= 2.11.0"
 end

@@ -8,3 +8,4 @@
 //= require rich/editor/rich_editor
 //= require bizarre_cms/rich_picker
 //= require bizarre_cms/jqtree
+//= require bizarre_cms/base

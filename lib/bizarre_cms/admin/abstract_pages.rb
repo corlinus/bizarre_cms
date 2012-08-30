@@ -12,15 +12,10 @@ if defined?(ActiveAdmin)
     form do |f|
       f.inputs do
         f.input :parent, collection: BizarreCms::AbstractPage.parent_collection_for(f.object)
-        f.input :page_type #, collection: Cms.models_types, include_blank: false
+        f.input :page_type, collection: BizarreCms.page_types, include_blank: false
         f.input :title
         f.input :slug
         f.input :published
-        #f.input :linked_abstract_pages,
-        #    as: :select,
-        #    collection: option_groups_from_collection_for_select(PageType.all, :abstract_pages, :title, :id,
-        #                                                         :title, f.object.linked_abstract_page_ids),
-        #    include_blank: false, input_html: { class: 'jquery-selectlist' }
       end
       #
       #TODO add :except method

@@ -11,6 +11,7 @@ class BizarreCms::AbstractPage < ActiveRecord::Base
 
   validates :title, uniqueness: [:parent_id], presence: true
   validates :slug, uniqueness: true, presence: true
+  validates :page_type, presence: true
 
   # TODO can we remove this method with awesome_nested set builid helper
   def self.parent_collection_for page=nil

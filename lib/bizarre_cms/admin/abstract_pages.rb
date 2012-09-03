@@ -16,8 +16,6 @@ if defined?(ActiveAdmin)
         f.input :layout_name, collection: BizarreCms::AbstractPage.layout_select, include_blank: false
         f.input :title
         f.input :slug
-        #FIXME move to model-layer
-        f.input :published, input_html: { checked: 'checked' } 
       end
       #
       #TODO add :except method

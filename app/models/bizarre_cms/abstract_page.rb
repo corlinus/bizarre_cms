@@ -14,6 +14,8 @@ class BizarreCms::AbstractPage < ActiveRecord::Base
   validates :page_type, presence: true
   validates :layout_name, presence: true
 
+  after_initialize :set_defaults
+
   # TODO can we remove this method with awesome_nested set builid helper
   def self.parent_collection_for page=nil
     order(:lft).map {|p| ['-- '*p.level + p.title, p.id]}
@@ -34,6 +36,14 @@ class BizarreCms::AbstractPage < ActiveRecord::Base
   # prevent to destroy branch
   before_destroy :leaf?
 
+  def body
+    self.content.to_html(:body)
+  end
+
+  def summary
+    content.to_html(:summary)
+  end
+
   #layouts must have *.html.* names
   def self.layout_select
     Dir.glob(File.expand_path('app/views/layouts/**/*.html.*', Rails.root)).map do |filename|
@@ -42,4 +52,9 @@ class BizarreCms::AbstractPage < ActiveRecord::Base
     end.compact.sort
   end
 
+  private
+
+  def set_defaults
+    self.published = true if self.published.nil?
+  end
 end

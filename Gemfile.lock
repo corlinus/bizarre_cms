@@ -222,6 +222,7 @@ DEPENDENCIES
   bizarre_cms!
   coffee-filter
   jquery-rails
+  redcarpet
   rich!
   rspec-rails (>= 2.11.0)
   sqlite3

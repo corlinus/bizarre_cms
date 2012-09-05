@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["corlinus"]
   s.email       = ["corlinus@gmail.com"]
   s.homepage    = "https://github.com/corlinus/bizarre_cms"
-  s.summary     = "TODO: Summary of BizarreCms."
-  s.description = "TODO: Description of BizarreCms."
+  s.summary     = "Filexible cms for rails"
+  s.description = "Filexible cms for rails"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

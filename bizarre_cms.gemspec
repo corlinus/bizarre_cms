@@ -7,8 +7,8 @@ require "bizarre_cms/version"
 Gem::Specification.new do |s|
   s.name        = "bizarre_cms"
   s.version     = BizarreCms::VERSION
-  s.authors     = ["corlinus"]
-  s.email       = ["corlinus@gmail.com"]
+  s.authors     = ["corlinus", "Mikhail Di"]
+  s.email       = ["corlinus@gmail.com", "wtltl2@gmail.com"]
   s.homepage    = "https://github.com/corlinus/bizarre_cms"
   s.summary     = "Filexible cms for rails"
   s.description = "Filexible cms for rails"

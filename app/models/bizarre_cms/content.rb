@@ -21,10 +21,4 @@ class BizarreCms::Content < ActiveRecord::Base
   def self.render(content)
     @@markdown.render(content)
   end
-
-  #include PgSearch
-  #multisearchable against: :body,  
-    #using: {
-      #tsearch: { :dictionary => "russian" }
-    #}
 end

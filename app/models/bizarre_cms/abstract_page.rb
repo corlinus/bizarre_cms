@@ -4,14 +4,11 @@ class BizarreCms::AbstractPage < ActiveRecord::Base
 
   acts_as_nested_set
 
-  has_many :abstract_page_links, dependent: :destroy
-  has_many :linked_abstract_pages, through: :abstract_page_links
-
-  scope :for_link_select, joins(:page_type).order('page_types.title, abstract_pages.title')
-
   validates :title, uniqueness: [:parent_id], presence: true
   validates :slug, uniqueness: true, presence: true
   validates :page_type, presence: true
+
+  scope :pulished, where(published: true)
 
   # TODO can we remove this method with awesome_nested set builid helper
   def self.parent_collection_for page=nil

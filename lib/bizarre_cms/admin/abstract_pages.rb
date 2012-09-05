@@ -13,7 +13,7 @@ if defined?(ActiveAdmin)
       f.inputs do
         f.input :parent, collection: BizarreCms::AbstractPage.parent_collection_for(f.object)
         f.input :page_type, collection: BizarreCms.page_types, include_blank: false
-        f.input :layout_name, collection: BizarreCms::AbstractPage.layout_select, include_blank: false
+        f.input :layout_name, collection: BizarreCms.available_layouts, include_blank: false
         f.input :title
         f.input :slug
       end

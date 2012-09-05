@@ -1,4 +1,10 @@
 BizarreCms.setup do |config|
   # custom pages
-  config.custom_pages = [:news]
+  config.custom_pages = []
+
+  # available layout names
+  # you can choose layouts inside app/views/layouts
+  # default layout name is 'application'
+  config.available_layouts = %w(application dark_layout)
+
 end

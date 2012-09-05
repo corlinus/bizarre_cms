@@ -41,14 +41,6 @@ class BizarreCms::AbstractPage < ActiveRecord::Base
     content.to_html(:summary)
   end
 
-  #layouts must have *.html.* names
-  def self.layout_select
-    Dir.glob(File.expand_path('app/views/layouts/**/*.html.*', Rails.root)).map do |filename|
-      filename.gsub!("#{File.expand_path('app/views/layouts', Rails.root)}/", '')
-      filename.split('/').last[0...1] == '_' ? nil : filename.split('.').first
-    end.compact.sort
-  end
-
   private
 
   def set_defaults

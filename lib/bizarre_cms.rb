@@ -14,7 +14,10 @@ module BizarreCms
   mattr_accessor :custom_pages
   @@custom_pages ||= []
 
-  # Setup BizarreCms. Run rails generate bizarre_cms_install.
+  mattr_accessor :available_layouts
+  @@available_layouts ||= []
+
+  # Setup BizarreCms. Run rails generate bizarre_cms:install.
   def self.setup
     yield self
   end

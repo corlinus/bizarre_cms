@@ -8,7 +8,7 @@ class BizarreCms::AbstractPage < ActiveRecord::Base
   validates :slug, uniqueness: true, presence: true
   validates :page_type, presence: true
 
-  scope :pulished, where(published: true)
+  scope :published, where(published: true)
 
   # TODO can we remove this method with awesome_nested set builid helper
   def self.parent_collection_for page=nil

@@ -7,7 +7,7 @@ class CreateBizarreCmsAbstractPages < ActiveRecord::Migration
       t.integer :parent_id
       t.integer :lft
       t.integer :rgt
-      t.boolean :published
+      t.boolean :published, default: true
 
       t.timestamps
     end

@@ -21,11 +21,4 @@ class BizarreCms::Content < ActiveRecord::Base
   def self.render(content)
     @@markdown.render(content)
   end
-
-  include PgSearch
-  #FIXME association search doesn't work
-  multisearchable against: :body,  
-    using: {
-      tsearch: { :dictionary => "russian" }
-    }
 end

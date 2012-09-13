@@ -16,7 +16,7 @@ ul.jqtree-tree ul {
 
 ul.jqtree-tree ul {
     display: block;
-    margin-left: 12px;
+    margin-left: 12px !important;
     margin-right: 0;
 }
 

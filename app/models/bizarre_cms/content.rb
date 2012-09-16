@@ -10,9 +10,9 @@ class BizarreCms::Content < ActiveRecord::Base
   @@markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 
   def to_html(field)
-    content = self.send(field)
-    if content.present?
-      @@markdown.render(content)
+    field_data = self.send(field)
+    if field_data.present?
+      @@markdown.render(field_data)
     else
       ''
     end

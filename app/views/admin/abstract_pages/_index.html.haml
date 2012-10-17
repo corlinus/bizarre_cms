@@ -15,7 +15,7 @@
   $('#tree').bind 'tree.move', (event)->
     $.ajax
       type: 'POST'
-      url: '/admin/abstract_pages/move'
+      url: '#{move_admin_bizarre_cms_abstract_pages_path}'
       dataType: 'script'
       data:
         position: event.move_info.position
@@ -23,7 +23,7 @@
         target_page_id: event.move_info.target_node.id
       error: ()->
         event.preventDefault()
-        alert('error!')
+        alert('Move error!')
 
   $('#tree').bind 'tree.click', (event)->
     document.location.href = '#{admin_bizarre_cms_abstract_page_path(':id')}'.replace ':id', event.node.id

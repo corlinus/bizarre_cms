@@ -1,4 +1,8 @@
 class BizarreCms::Content < ActiveRecord::Base
+  def self.table_name_prefix
+    'bizarre_cms_'
+  end
+
   belongs_to :contentable, polymorphic: true
 
   attr_accessible :body, :meta_desc, :meta_keywords, :meta_title, :summary, :top_image, :delete_image

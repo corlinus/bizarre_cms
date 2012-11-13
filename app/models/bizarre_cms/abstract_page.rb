@@ -1,4 +1,8 @@
 class BizarreCms::AbstractPage < ActiveRecord::Base
+  def self.table_name_prefix
+    'bizarre_cms_'
+  end
+
   attr_accessible :page_type, :parent_id, :published, :slug, :title, :linked_abstract_page_ids
   include BizarreCms::Contentable
 
